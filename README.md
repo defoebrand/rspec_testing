@@ -33,14 +33,14 @@ _cd rspec_testing_
 
 👤 **Kedir Abdurahman**
 
--   Github: [@](https://github.com/keddo)
--   Twitter: [@](https://twitter.com/kedirman)
--   LinkedIn: [](https://www.linkedin.com/in/kedirabdurahman/)
+-   Github: [@keddo](https://github.com/keddo)
+-   Twitter: [@kedirman](https://twitter.com/kedirman)
+-   LinkedIn: [@kedirabdurahman](https://www.linkedin.com/in/kedirabdurahman/)
 
 👤 **Brandon Defoe**
 
 -   Github: [@defoebrand](https://github.com/defoebrand)
--   LinkedIn: [Defoe Brandon](https://www.linkedin.com/in/defoebrand/)
+-   LinkedIn: [@defoebrand](https://www.linkedin.com/in/defoebrand/)
 -   Gmail: <mailto:defoe.brand@gmail.com>
 
 ## 🤝 Contributing

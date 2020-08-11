@@ -107,6 +107,9 @@ describe Enumerable do
     it 'return matches that of #count enumerable with numeric array' do
       expect(num_array.my_count { num_array_test_block }).to eql(num_array.count { num_array_test_block })
     end
+    it 'return does not count empty array' do
+      expect(empty_array.my_count).not_to eql(1)
+    end
   end
 
   describe '#my_map' do

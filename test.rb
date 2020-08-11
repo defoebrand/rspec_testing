@@ -122,6 +122,7 @@ p(stooges.my_each { |stooge| print stooge + "\n" })
 p stooges.my_each
 p(1..5).my_each { |x| p x }
 array.my_each.is_a?(Enumerator)
+
 p(1..5).my_each_with_index { |num, ind| "#{num}: #{ind}" }
 p(contact_info.my_each { |key, value| print key + ' = ' + value + "\n" })
 p(1..5).my_each_with_index

@@ -11,59 +11,72 @@ describe Enumerable do
   let(:str_array) { %w[Larry Curly Moe] }
   let(:str_hash) { { 'name' => 'Bob', 'phone' => '111-111-1111' } }
   let(:num_hash) { { apples: 10, oranges: 5, bananas: 1 } }
-  let(:test_block) { proc { |value| value.even? } }
+  let(:num_array_test_block) { proc { |value| value.even? } }
+  let(:str_hash_test_block) do
+    proc { |key, value|
+      p key
+      p value
+    }
+  end
 
-  describe '#my_each' do
-    it 'return matches that of #each enumerable' do
-      expect(num_array.my_each { test_block }).to eql(num_array.each { test_block })
+  describe '#my_each with num array' do
+    it 'return matches that of #each enumerable with numeric array' do
+      expect(num_array.my_each { num_array_test_block }).to eql(num_array.each { num_array_test_block })
     end
   end
 
-  describe '#my_each_with_index' do
-    it 'return matches that of #each_with_index enumerable' do
-      expect(num_array.my_each_with_index { test_block }).to eql(num_array.each_with_index { test_block })
+  describe '#my_each with str hash' do
+    it 'return matches that of #each enumerable with string hash' do
+      expect(str_hash.my_each { str_hash_test_block }).to eql(str_hash.each { str_hash_test_block })
     end
   end
 
-  describe '#my_select' do
-    it 'return matches that of #select enumerable' do
-      expect(num_array.my_select { test_block }).to eql(num_array.select { test_block })
-    end
-  end
-
-  describe '#my_all?' do
-    it 'return matches that of #all? enumerable' do
-      expect(num_array.my_all? { test_block }).to eql(num_array.all? { test_block })
-    end
-  end
-
-  describe '#my_any?' do
-    it 'return matches that of #any? enumerable' do
-      expect(num_array.my_any? { test_block }).to eql(num_array.any? { test_block })
-    end
-  end
-
-  describe '#my_none?' do
-    it 'return matches that of #none? enumerable' do
-      expect(num_array.my_none? { test_block }).to eql(num_array.none? { test_block })
-    end
-  end
-
-  describe '#my_count' do
-    it 'return matches that of #count enumerable' do
-      expect(num_array.my_count { test_block }).to eql(num_array.count { test_block })
-    end
-  end
-
-  describe '#my_map' do
-    it 'return matches that of #map enumerable' do
-      expect(num_array.my_map { test_block }).to eql(num_array.map { test_block })
-    end
-  end
-
-  describe '#my_inject' do
-    it 'return matches that of #inject enumerable' do
-      expect(num_array.my_inject { test_block }).to eql(num_array.inject { test_block })
-    end
-  end
+  #
+  # describe '#my_each_with_index' do
+  #   it 'return matches that of #each_with_index enumerable with numeric array' do
+  #     expect(num_array.my_each_with_index { num_array_test_block }).to eql(num_array.each_with_index { num_array_test_block })
+  #   end
+  # end
+  #
+  # describe '#my_select' do
+  #   it 'return matches that of #select enumerable with numeric array' do
+  #     expect(num_array.my_select { num_array_test_block }).to eql(num_array.select { num_array_test_block })
+  #   end
+  # end
+  #
+  # describe '#my_all?' do
+  #   it 'return matches that of #all? enumerable with numeric array' do
+  #     expect(num_array.my_all? { num_array_test_block }).to eql(num_array.all? { num_array_test_block })
+  #   end
+  # end
+  #
+  # describe '#my_any?' do
+  #   it 'return matches that of #any? enumerable with numeric array' do
+  #     expect(num_array.my_any? { num_array_test_block }).to eql(num_array.any? { num_array_test_block })
+  #   end
+  # end
+  #
+  # describe '#my_none?' do
+  #   it 'return matches that of #none? enumerable with numeric array' do
+  #     expect(num_array.my_none? { num_array_test_block }).to eql(num_array.none? { num_array_test_block })
+  #   end
+  # end
+  #
+  # describe '#my_count' do
+  #   it 'return matches that of #count enumerable with numeric array' do
+  #     expect(num_array.my_count { num_array_test_block }).to eql(num_array.count { num_array_test_block })
+  #   end
+  # end
+  #
+  # describe '#my_map' do
+  #   it 'return matches that of #map enumerable with numeric array' do
+  #     expect(num_array.my_map { num_array_test_block }).to eql(num_array.map { num_array_test_block })
+  #   end
+  # end
+  #
+  # describe '#my_inject' do
+  #   it 'return matches that of #inject enumerable with numeric array' do
+  #     expect(num_array.my_inject { num_array_test_block }).to eql(num_array.inject { num_array_test_block })
+  #   end
+  # end
 end

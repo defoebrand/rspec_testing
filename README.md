@@ -9,10 +9,6 @@ This repository is for testing Ruby files using rspec
 -   Ubuntu
 -   Atom & VS Code
 
-## Live Demo
-
-Here is the [Live Demo Link](<>)
-
 ## Prerequisities
 
 To get this project up and running locally, you must already have ruby installed on your computer.
@@ -31,24 +27,21 @@ _git clone <https://github.com/defoebrand/rspec_testing.git>_
 
 _cd rspec_testing_
 
-**Step 4**: type `rspec` into the command line, open it in irb, or edit it in a text editor. Alternatively if you would like to skip all of these steps, just click the live demo above.
+**Step 4**: To run rspec tests on enumerables file, type `rspec spec spec/enumerable_test.rb` into the command line, open it in irb, or edit it in a text editor. To run rspec tests on game files, type `rspec spec spec/game_test.rb` into the command line
 
 ## Authors
 
 👤 **Kedir Abdurahman**
 
--   Github: [@](https://github.com/keddo)
--   Twitter: [@](https://twitter.com/)
--   LinkedIn: [](https://www.linkedin.com/in//)
--   Gmail: &lt;>
+-   Github: [@keddo](https://github.com/keddo)
+-   Twitter: [@kedirman](https://twitter.com/kedirman)
+-   LinkedIn: [@kedirabdurahman](https://www.linkedin.com/in/kedirabdurahman/)
 
 👤 **Brandon Defoe**
 
 -   Github: [@defoebrand](https://github.com/defoebrand)
--   LinkedIn: [Defoe Brandon](https://www.linkedin.com/in/defoebrand/)
+-   LinkedIn: [@defoebrand](https://www.linkedin.com/in/defoebrand/)
 -   Gmail: <mailto:defoe.brand@gmail.com>
-
-## Repository Contents
 
 ## 🤝 Contributing
 
